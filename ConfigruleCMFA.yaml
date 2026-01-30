@@ -63,6 +63,21 @@ proxies:
       headers:
         Host: id1vless.ipservers.xyz
     udp: true
+    - name: AKUN3
+  server: bug.com
+  port: 443
+  type: vless
+  uuid: aae98731-898a-4cd3-8c7f-d09af2387d63
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: id2vless.ipservers.xyz
+  network: ws
+  ws-opts:
+    path: /jagoanssh
+    headers:
+      Host: id2vless.ipservers.xyz
+  udp: true
   - name: AKUN3
     server: quiz.int.vidio.com
     port: 443
@@ -167,4 +182,5 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
